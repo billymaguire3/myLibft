@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 17:35:05 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/21 13:40:35 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/08/22 11:21:36 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strncat(char *dest, const char *src, size_t n)
 {
-	int i;
-	int len;
-	size_t x;
+	int		i;
+	int		len;
+	size_t	x;
 
 	i = 0;
 	len = (ft_strlen(dest));

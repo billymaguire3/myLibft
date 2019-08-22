@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/21 15:33:09 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/21 15:47:35 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/08/22 11:22:54 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
-		return (c - 'a' + 'A'); 
+		return (c - 'a' + 'A');
 	else
 		return (c);
 }
