@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   isdigit_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/21 16:12:29 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/22 13:54:56 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/08/22 13:23:22 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/08/22 13:30:14 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int		ft_isascii(int c)
+int		main(void)
 {
-	if (c >= 0 && c <= 0177)
-		return (c);
+	int c;
+
+	c = '8';
+	printf("Computer's: ""%d\n", isdigit(c));
+	printf("Mine: ""%d\n", ft_isdigit(c));
 	return (0);
 }

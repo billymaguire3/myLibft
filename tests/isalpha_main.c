@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   isalpha_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/21 16:12:29 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/22 13:54:56 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/08/22 12:13:42 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/08/22 13:59:28 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int		ft_isascii(int c)
+int		main(void)
 {
-	if (c >= 0 && c <= 0177)
-		return (c);
+	int m;
+	int c;
+
+	m = '[';
+	c = '[';
+	printf("Mine: ""%d\n", ft_isalpha(m));
+	printf("Computer's: ""%d\n", isalpha(c));
 	return (0);
 }
+
