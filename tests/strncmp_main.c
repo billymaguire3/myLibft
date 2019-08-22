@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   strncmp_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/24 17:09:40 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/01 14:03:34 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/08/01 15:04:49 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/08/02 11:23:38 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+int		main(void)
 {
-	int i;
+	char s1[] = "billy";
+	char s2[] = "bills";
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	char test1[] = "billy";
+	char test2[] = "bills";
+
+	printf("%d\n", ft_strncmp(s1, s2, 4));
+	printf("%d\n", strncmp(test1, test2, 4));
+	return (0);
 }

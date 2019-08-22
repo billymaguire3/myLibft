@@ -1,27 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   toupper_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/24 17:09:40 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/01 14:03:34 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/08/21 15:33:47 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/08/21 15:47:30 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+int		main(void)
 {
-	int i;
+	int c;
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	c = 'f';
+	printf("Mine: ""%d\n", ft_toupper(c));
+	printf("Computer's: ""%d\n", toupper(c));
+	return (0);
 }

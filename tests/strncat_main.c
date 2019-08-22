@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   strncat_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/24 17:09:40 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/01 14:03:34 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/08/20 18:27:39 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/08/21 13:36:51 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strcpy(char *dest, char *src)
+int		main(void)
 {
-	int i;
+	char src[]  = " Maguire";
+	char dest[20]  = "Billy";
+	char testsrc[] = " Maguire";
+	char testdest[20]  = "Billy";
 
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	ft_strncat(dest, src, 5);
+	printf("%s\n", dest);
+
+	strncat(testdest, testsrc, 5);
+	printf("%s\n", testdest);
+
+	return (0);
 }
