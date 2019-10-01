@@ -1,37 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   memset_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/02 11:40:51 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/09/13 14:56:41 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/08/27 18:36:18 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/09/13 15:34:03 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_putnbr(int n)
+int		main(void)
 {
-	if (n == -2147483648)
-	{
-		ft_putchar('-');
-		ft_putnbr(2147);
-		ft_putnbr(483648);
-	}
-	else if (n < 0)
-	{
-		ft_putchar('-');
-		n = (n * -1);
-	}
-	else if (n > 9)
-	{
-		ft_putnbr(n / 10);
-		ft_putchar((n % 10) + '0');
-	}
-	else
-	{
-		ft_putchar(n + '0');
-	}
+	char str[50] = "william maguire";
+
+	printf("before memset: %s\n", str);
+
+	memset(str + 8, '.', 6*sizeof(char));
+
+	printf("after memset: %s\n", str);
+	return (0);
 }

@@ -1,37 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/02 11:40:51 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/09/13 14:56:41 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/09/13 15:35:03 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/09/13 15:58:28 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	*ft_memset(void *str, int c, size_t len)
 {
-	if (n == -2147483648)
+	int i;
+
+	i = 0;
+	while (str[i] != '\0' && i < len)
 	{
-		ft_putchar('-');
-		ft_putnbr(2147);
-		ft_putnbr(483648);
+		str[i] = c;
+		i++;
 	}
-	else if (n < 0)
-	{
-		ft_putchar('-');
-		n = (n * -1);
-	}
-	else if (n > 9)
-	{
-		ft_putnbr(n / 10);
-		ft_putchar((n % 10) + '0');
-	}
-	else
-	{
-		ft_putchar(n + '0');
-	}
+	return (str);
 }
