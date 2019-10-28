@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 13:28:06 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/01 14:19:57 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/10/10 13:02:28 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,7 @@ int		main(void)
 
 	ft_strcpy(dest, src);
 	printf("%s\n", dest);
+    strcpy(dest, src);
+    printf("%s\n", dest);
 	return (0);
 }

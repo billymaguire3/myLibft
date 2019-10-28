@@ -6,19 +6,20 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 11:39:00 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/09/13 15:54:14 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/10/10 13:45:45 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <strings.h>
-#include <stdio.h>
 #include <ctype.h>
+#include <stdio.h>
 
-int		ft_strlen(char *str);
+int		ft_strlen(const char *str);
 int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, unsigned int n);
 int		ft_atoi(const char *str);
@@ -38,6 +39,6 @@ char	*ft_strncpy(char *dest, char *src, unsigned int len);
 char	*ft_strdup(const char *src);
 char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t n);
-size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 #endif

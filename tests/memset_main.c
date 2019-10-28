@@ -16,10 +16,10 @@ int		main(void)
 {
 	char str[50] = "william maguire";
 
-	printf("before memset: %s\n", str);
-
 	memset(str + 8, '.', 6*sizeof(char));
+	printf("Computer's memset:\n""%s\n", str);
 
-	printf("after memset: %s\n", str);
+    ft_memset(str + 8, '.', 6*sizeof(char));
+    printf("My memset:\n""%s\n", str);
 	return (0);
 }

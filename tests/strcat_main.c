@@ -6,11 +6,12 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 14:25:07 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/13 12:41:34 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/10/10 13:39:59 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h>
 
 int		main(void)
 {
@@ -22,6 +23,6 @@ int		main(void)
 	strcat(dest, src);
 	printf("%s\n", dest);
 	ft_strcat(testdest, testsrc);
-	printf("%s\n", dest);
+	printf("%s\n", testdest);
 	return (0);
 }
