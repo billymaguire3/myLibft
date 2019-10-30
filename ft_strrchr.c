@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/21 15:04:57 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/30 09:42:30 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/10/28 17:15:54 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/10/30 14:03:48 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 'a' - 'A');
-	else
-		return (c);
-}
+	if (ft_strchr(s, c) == NULL)
+		return (NULL);
+	while (*s != '\0')
+		s++;
+	while (*s != c)
+		s--;

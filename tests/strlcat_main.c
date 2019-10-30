@@ -1,16 +1,13 @@
-#include <stdio.h>
 #include "../libft.h"
 
-int     main(void)
+int		main()
 {
-	char src[20]  = "maguire";
-	char dest[20]  = "billy";
+	char src[10] = "Maguire";
+	char dest[20] = "Billyallen";
+	char dest2[20] = "Billyallen";
 
-	//ft_strlcat(dest, src, 5);
-	//printf("%s\n", dest);
-
-	strlcat(dest, src, 9);
-	printf("%s\n", dest);
+	printf("this is what strlcat returns: %lu\n", strlcat(dest, src, 10));
+	printf("this is what my ft_strlcat returns: %lu\n", ft_strlcat(dest2, src, 10));
 
 	return (0);
-} 
+}

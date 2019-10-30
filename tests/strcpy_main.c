@@ -6,11 +6,11 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 13:28:06 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/10 13:02:28 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/07/31 13:03:55 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int		main(void)
 {
@@ -19,7 +19,5 @@ int		main(void)
 
 	ft_strcpy(dest, src);
 	printf("%s\n", dest);
-    strcpy(dest, src);
-    printf("%s\n", dest);
 	return (0);
 }

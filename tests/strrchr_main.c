@@ -1,21 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   strrchr_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/21 15:04:57 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/30 09:42:30 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/10/28 17:15:31 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/10/30 13:56:27 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int		ft_tolower(int c)
+int		main(void)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 'a' - 'A');
-	else
-		return (c);
+	char str[10] = "billy";
+
+	printf("the output for CPU's strchr is: ""%s\n", strchr(str, 'y'));
+	printf("the output for MY ft_strchr is: ""%s\n", ft_strchr(str, 'y'));
+	return (0);
 }

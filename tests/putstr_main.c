@@ -6,11 +6,11 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 13:27:44 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/07/31 14:14:00 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/07/31 12:47:07 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 int		main(void)
 {
