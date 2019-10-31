@@ -6,7 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/30 13:19:27 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/30 13:47:32 by wimaguir         ###   ########.fr       */
+/*   Updated: 2019/10/31 13:12:03 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
+{
+	ft_memset(s, 0, n);
+}
