@@ -1,19 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putstr_main.c                                      :+:      :+:    :+:   */
+/*   memcmp_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/25 13:27:44 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/07/31 12:47:07 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/12/05 18:59:47 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/21 12:08:18 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-int		main(void)
+int		main(int argc, char**argv)
 {
-	ft_putstr("billy");
+	if (argc == 4)
+	{
+		printf("CPU's memcmp: %d\n\n", memcmp(argv[1], argv[2], atoi(argv[3])));
+		printf("MY ft_memcmp: %d\n\n", memcmp(argv[1], argv[2], atoi(argv[3])));
+	}
 	return (0);
 }
+
+/*
+int		main(void)
+{
+	char s1[10] = "billy";
+	char s2[10] = "bills";
+
+	printf("CPU's memcmp: %d\n\n", memcmp(s1, s2, 5));
+	return (0);
+}
+*/

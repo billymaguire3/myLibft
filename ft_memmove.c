@@ -1,29 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 16:21:15 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 16:45:41 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/12/04 16:36:20 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/12/04 20:01:16 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	char	*str;
+	char	*mydst;
+	char	*mysrc;
+	size_t	i;
 
-	str = (char*)s;
-	while (*str != c)
+	mydst = (char *)dst;
+	mysrc = (char *)src;
+	if (dst == src)
+		return (dst);
+	else if (dst > src)
 	{
-		if (*str == '\0')
-		{
-			return (NULL);
-		}
-		str++;
+		i = len;
+		while (i-- > 0)
+			mydst[i] = mysrc[i];
 	}
-	return (str);
+	else
+	{
+		i = 0;
+		while (i < len)
+		{
+			mydst[i] = mysrc[i];
+			i++;
+		}
+	}
+	return (dst);
 }

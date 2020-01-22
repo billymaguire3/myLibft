@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strncpy_main.c                                     :+:      :+:    :+:   */
+/*   bzero_main.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/25 16:04:34 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/07/31 13:45:27 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/12/04 11:38:18 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/12/04 13:10:45 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int		main(void)
 {
-	char array[14];
-	char test[10];
+	char str[10] = "william";
 
-	printf("%s\n", ft_strncpy(array, "avbbvvvvvvvfffff", 12));
-	printf("%s\n", strncpy(test, "billy loves hockey", 2));
+	bzero(str + 4, 4);
+	printf("CPU's bzero:\n""%s\n", str);
+
+	ft_bzero(str + 4, 4);
+	printf("My bzero:\n""%s\n", str);
+
 	return (0);
 }
-

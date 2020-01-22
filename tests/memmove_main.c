@@ -1,29 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   memmove_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 16:21:15 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 16:45:41 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/12/04 19:53:13 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/12/04 19:59:12 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int		main(int argc, char **argv)
 {
-	char	*str;
+	char *testdst;
+	char *testsrc;
 
-	str = (char*)s;
-	while (*str != c)
+	testdst = argv[1];
+	testsrc = argv[2];
+	if (argc == 4)
 	{
-		if (*str == '\0')
-		{
-			return (NULL);
-		}
-		str++;
+		ft_memmove(argv[1], argv[2], atoi(argv[3]));
+		memmove(testdst, testsrc, atoi(argv[3]));
+		printf("Mine: %s\n", argv[1]);
+		printf("CPU's: %s\n", argv[1]);
 	}
-	return (str);
+	return (0);
 }

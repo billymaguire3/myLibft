@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 11:39:00 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/28 17:39:03 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/21 16:23:17 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,16 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isprint(int c);
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
 void	ft_putnbr(int n);
 void	*ft_memset(void *str, int c, size_t len);
+void	*ft_memcpy(void	*dst, const void *src, size_t n);
+void	*ft_memmove(void *dst, const void *src, size_t len);
+void	*ft_memchr(const void *s, int c, size_t n);
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
+void	ft_bzero(void *s, size_t n);
 char	*ft_strcpy(char *dest, char *src);
 char	*ft_strncpy(char *dest, char *src, unsigned int len);
 char	*ft_strdup(const char *src);
@@ -40,6 +46,8 @@ char	*ft_strcat(char *dest, const char *src);
 char	*ft_strncat(char *dest, const char *src, size_t n);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strstr(char *haystack, char *needle);
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlen(const char *str);
 

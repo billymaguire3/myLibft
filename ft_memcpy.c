@@ -1,23 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strcpy_main.c                                      :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/07/25 13:28:06 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/07/31 13:03:55 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/12/04 13:30:18 by wimaguir          #+#    #+#             */
+/*   Updated: 2019/12/04 19:54:46 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		main(void)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char dest[] = "billyyyyyyyyyyyyyyy";
-	char src[] = "redwings";
+	size_t	i;
+	char	*mydst;
+	char	*mysrc;
 
-	ft_strcpy(dest, src);
-	printf("%s\n", dest);
-	return (0);
+	mydst = (char *)dst;
+	mysrc = (char *)src;
+	i = 0;
+	while (i < n)
+	{
+		mydst[i] = mysrc[i];
+		i++;
+	}
+	return (dst);
 }

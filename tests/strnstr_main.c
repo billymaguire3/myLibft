@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   strnstr_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 16:21:15 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 16:45:41 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/21 16:20:01 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/21 16:22:27 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int		main(void)
 {
-	char	*str;
+	char largestring[20] = "lets go redwings";
+	char smallstring[10] = "gs";
 
-	str = (char*)s;
-	while (*str != c)
-	{
-		if (*str == '\0')
-		{
-			return (NULL);
-		}
-		str++;
-	}
-	return (str);
+	printf("CPU's strnstr: %s\n\n", strnstr(largestring, smallstring, 16));
+	printf("My ft_strnstr: %s\n\n", ft_strnstr(largestring, smallstring, 16));
+	return (0);
 }

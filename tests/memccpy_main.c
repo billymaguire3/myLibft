@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   memccpy_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 16:21:15 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 16:45:41 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/08 15:40:26 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/08 15:40:56 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strchr(const char *s, int c)
+int		main(void)
 {
-	char	*str;
+	char testdst[40];
+	char testsrc[40] = "Copy this string to testdst";
+	char dst[40];
+	char src[40] = "Copy this string to testdst";
 
-	str = (char*)s;
-	while (*str != c)
-	{
-		if (*str == '\0')
-		{
-			return (NULL);
-		}
-		str++;
-	}
-	return (str);
+	memccpy(testdst, testsrc, 's', sizeof (testdst));
+	printf("CPU's memccpy: %s\n\n", testdst);
+	ft_memccpy(dst, src, 's', sizeof (testdst));
+	printf("MY ft_memccpy: %s\n\n", testdst);
+	return (0);
 }
