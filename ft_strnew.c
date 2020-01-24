@@ -1,18 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/30 13:19:27 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/12/04 11:55:19 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/24 12:32:46 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/24 12:58:56 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strnew(size_t size)
 {
-	ft_memset(s, 0, n);
+	size_t	i;
+	char	*str;
+
+	i = 0;
+	str = (char *)malloc(sizeof(size + 1));
+	if (!str)
+		return (NULL);
+	while (i <= size)
+	{
+		str[i] = '\0';
+		i++;
+	}
+	return (str);
 }
