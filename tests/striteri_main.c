@@ -1,22 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memdel.c                                        :+:      :+:    :+:   */
+/*   striteri_main.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/24 12:24:01 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/27 14:25:48 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/27 15:34:37 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/27 15:56:06 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_memdel(void **ap)
+#include <stdio.h> //printf
+
+void	vert_print(unsigned int i, char *str)
 {
-	if (ap)
-	{
-		free(*ap);
-		*ap = (NULL);
-	}
+	printf("%c\n", str[i]);
+}
+
+int		main(void)
+{
+	ft_striteri("this is a string", vert_print);
+	return (0);
 }
