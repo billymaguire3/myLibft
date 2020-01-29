@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striter_main.c                                     :+:      :+:    :+:   */
+/*   strmap_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 13:06:12 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/28 13:35:20 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 #include <stdio.h> //printf
 
-void	vert_print(char *str)
+char	func(char s)
 {
-	int i = 0;
-	printf("%c\n", str[i]);
+	s += 5;
+	return (s);
 }
 
 int		main(void)
 {
-	ft_striter("", vert_print);
+	char *str = "abc";
+	char *fresh = ft_strmap(str, func);
+	printf("%s\n", fresh);
 	return (0);
 }

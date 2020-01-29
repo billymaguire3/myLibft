@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 16:03:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/27 18:11:34 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/28 13:35:27 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,19 +30,4 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		return (fresh);
 	}
 	return (NULL);
-}
-
-#include <stdio.h> //printf
-
-void	print(char *fresh, const char *str)
-{
-	int i = 0;
-	(void)str;
-	printf("%c\n", fresh[i]);
-}
-
-int		main(void)
-{
-	ft_strmap("this is a string", print);
-	return (0);
 }

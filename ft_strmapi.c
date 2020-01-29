@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striter_main.c                                     :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 13:29:08 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/28 14:13:24 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
-#include <stdio.h> //printf
-
-void	vert_print(char *str)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int i = 0;
-	printf("%c\n", str[i]);
-}
+	char *fresh;
+	unsigned int i;
 
-int		main(void)
-{
-	ft_striter("", vert_print);
-	return (0);
+	i = 0;
+	fresh = (char *)malloc(ft_strlen(s) + 1);
+	if (s && f)
+	{
+		while (s[i] != '\0')
+		{
+			fresh[i] = f(i, s[i]);
+			i++;
+		}
+		fresh[i] = '\0';
+		return (fresh);
+	}
+	return (NULL);
 }

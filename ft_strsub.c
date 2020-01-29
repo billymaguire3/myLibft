@@ -1,27 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striter_main.c                                     :+:      :+:    :+:   */
+/*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 17:00:40 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/28 18:03:59 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
-#include <stdio.h> //printf
-
-void	vert_print(char *str)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	int i = 0;
-	printf("%c\n", str[i]);
-}
+	char *fresh;
+	unsigned int i;
 
-int		main(void)
-{
-	ft_striter("", vert_print);
-	return (0);
+	i = 0;
+	fresh = (char *) malloc((len + 1) * sizeof(char));
+	if (s && fresh)
+	{
+		while (i < len)
+		{
+			fresh[i] = s[start];
+			i++;
+			start++;
+		}
+		fresh[i] = '\0';
+		return (fresh);
+	}
+	return (NULL);
 }

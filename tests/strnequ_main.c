@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striter_main.c                                     :+:      :+:    :+:   */
+/*   strnequ_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 15:44:10 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/28 15:44:27 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h> // printf
 
-#include <stdio.h> //printf
-
-void	vert_print(char *str)
+int		main(int argc, char **argv)
 {
-	int i = 0;
-	printf("%c\n", str[i]);
-}
-
-int		main(void)
-{
-	ft_striter("", vert_print);
+	if (argc == 4)
+		printf("%d\n", ft_strnequ(argv[1], argv[2], ft_atoi(argv[3])));
 	return (0);
 }

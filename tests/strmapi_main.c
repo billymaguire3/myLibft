@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striter_main.c                                     :+:      :+:    :+:   */
+/*   strmapi_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 14:09:49 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/28 14:13:37 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-
 #include <stdio.h> //printf
 
-void	vert_print(char *str)
+char	ascii_plus_five(unsigned int i, char s)
 {
-	int i = 0;
-	printf("%c\n", str[i]);
+	(void)i;
+	s += 5;
+	return (s);
 }
 
 int		main(void)
 {
-	ft_striter("", vert_print);
+	char *str = "billy";
+	char *fresh = ft_strmapi(str, ascii_plus_five);
+	printf("%s\n", fresh);
 	return (0);
 }

@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   striter_main.c                                     :+:      :+:    :+:   */
+/*   strsub_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 18:01:08 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/28 18:04:33 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h> // printf
 
-#include <stdio.h> //printf
-
-void	vert_print(char *str)
+int		main(int argc, char **argv)
 {
-	int i = 0;
-	printf("%c\n", str[i]);
-}
-
-int		main(void)
-{
-	ft_striter("", vert_print);
+	if (argc == 4)
+		printf("%s\n", ft_strsub(argv[1], ft_atoi(argv[2]), ft_atoi(argv[3])));
 	return (0);
 }
