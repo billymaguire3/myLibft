@@ -6,7 +6,7 @@
 #    By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/25 12:15:24 by wimaguir          #+#    #+#              #
-#    Updated: 2020/01/28 16:57:15 by wimaguir         ###   ########.fr        #
+#    Updated: 2020/01/29 17:31:46 by wimaguir         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ FUNC = ft_putchar.c ft_putstr.c ft_strlen.c ft_strcpy.c ft_strncpy.c ft_strcmp.c
 	   ft_strdup.c ft_strcat.c ft_strncat.c ft_strlcat.c ft_tolower.c ft_toupper.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 	   ft_isprint.c ft_memset.c ft_strchr.c ft_strrchr.c ft_memcpy.c ft_memmove.c ft_memchr.c ft_memcmp.c ft_memccpy.c \
 	   ft_strstr.c ft_strnstr.c ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c ft_striter.c ft_striteri.c \
-	   ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c
+	   ft_strmap.c ft_strmapi.c ft_strequ.c ft_strnequ.c ft_strsub.c ft_strjoin.c
 
 TESTS = tests/*.c 
 
@@ -28,7 +28,7 @@ OBJECTS = ft_putchar.o ft_putstr.o ft_strcpy.o ft_strncpy.o ft_strlen.o ft_strcm
 		  ft_strdup.o ft_strcat.o ft_strlcat.o ft_strncat.o ft_tolower.o ft_toupper.o ft_isalpha.o ft_isdigit.o ft_isalnum.o \
 		  ft_isprint.o ft_memset.o ft_strchr.o ft_strrchr.o ft_memcpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_memccpy.o \
 		  ft_strstr.o ft_strnstr.o ft_memalloc.o ft_memdel.o ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_striteri.o \
-		  ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o
+		  ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o ft_strjoin.o
 
 
 CC = gcc
@@ -41,7 +41,7 @@ $(NAME):
 		ft_strdup.o ft_strcat.o ft_strncat.o ft_strlcat.o ft_tolower.o ft_toupper.o ft_isalpha.o ft_isdigit.o ft_isalnum.o \
 	   	ft_isprint.o ft_memset.o ft_strchr.o ft_strrchr.o ft_memcpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_memccpy.o \
 		ft_strstr.o ft_strnstr.o ft_memalloc.o ft_memdel.o ft_strnew.o ft_strdel.o ft_strclr.o ft_striter.o ft_striteri.o \
-		ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o
+		ft_strmap.o ft_strmapi.o ft_strequ.o ft_strnequ.o ft_strsub.o ft_strjoin.o
 
  
 	ranlib libft.a

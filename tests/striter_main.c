@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 14:05:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/28 13:32:23 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/29 14:22:52 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ void	vert_print(char *str)
 
 int		main(void)
 {
-	ft_striter("", vert_print);
+	ft_striter("billy", vert_print);
 	return (0);
 }

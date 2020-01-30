@@ -6,9 +6,15 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 12:32:46 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/24 12:58:56 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/29 17:00:36 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates (with malloc) and returns a “fresh” string ending with ’\0’. Each
+** character of the string is initialized at '\0'. If the allocation fails the
+** function returns NULL.
+*/
 
 #include "libft.h"
 

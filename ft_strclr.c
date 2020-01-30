@@ -6,9 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 13:35:39 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/24 13:37:08 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/29 17:07:07 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Use ft_bzero to set every character of the string to the value ’\0’.
+*/
 
 #include "libft.h"
 

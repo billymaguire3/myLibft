@@ -1,39 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 13:29:08 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/29 17:19:22 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/29 17:36:09 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/29 18:16:20 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Applies the function f to each character of the string passed as argument by
-** giving its index as first argument to create a “fresh” new string
-** (with malloc) resulting from the successive applications of f.
-*/
-
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char			*fresh;
-	unsigned int	i;
+	char	*fresh;
+	int len;
+	int i;
 
 	i = 0;
-	fresh = (char *)malloc(ft_strlen(s) + 1);
-	if (s && f)
+	len = ft_strlen(s1);
+	fresh = (char *)malloc());
+	if (s1 && s2)
 	{
-		while (s[i] != '\0')
+		while (s1[i] && s2[i])
 		{
-			fresh[i] = f(i, s[i]);
+			fresh[j] = ft_strcat(s1[i], s2[i]);
 			i++;
+			j++;
 		}
-		fresh[i] = '\0';
+		fresh[j] = '\0';
 		return (fresh);
 	}
 	return (NULL);
+}
+
+#include <stdio.h>
+
+int		main(void)
+{
+	char *prefix = "Look it ";
+	char *suffix = "Works!!";
+
+	printf("%s\n\n%s\n\n%s\n\n", prefix, suffix, ft_strjoin(prefix, suffix));
+	return (0);
 }

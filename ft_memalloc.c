@@ -6,9 +6,15 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 11:38:37 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/24 12:16:31 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/29 16:54:57 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Allocates (with malloc) and returns a “fresh” memory area. The memory
+** allocated is initialized to 0. If the allocation fails, the function
+** returns NULL.
+*/
 
 #include "libft.h"
 
