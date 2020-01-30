@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   strjoin_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/29 17:36:09 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/30 13:53:42 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/30 13:52:43 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/01/30 13:53:33 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+#include <stdio.h>
+
+int		main(void)
 {
-	char	*fresh;
-	int i;
+	char *prefix = "Look it ";
+	char *suffix = "Works!!!!!!!!";
 
-	i = 0;
-	fresh = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1) + ft_strlen(s2));
-	if (s1 != NULL && s2 != NULL)
-	{
-		while(*s1 != '\0')
-			ft_strcpy(&fresh[i++], ((char *)s1++));
-		while (*s2 != '\0')
-			ft_strcpy(&fresh[i++], ((char *)s2++));
-		fresh[i] = '\0';
-		return (fresh);
-	}
-	else
-		return (NULL);
+	printf("s1 before ft_strjoin: %s\n", prefix);
+	printf("s2 before ft_strjoin: %s\n", suffix);
+	printf("s1 & s2 after FT_STRJOIN: %s\n", ft_strjoin(prefix, suffix));
+	return (0);
 }
