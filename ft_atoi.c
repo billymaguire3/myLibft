@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 17:21:44 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/13 12:55:49 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 16:14:29 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_atoi converts the initial portion of the string pointed to by str to
+** int representation.
+*/
 
 #include "libft.h"
 

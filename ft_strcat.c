@@ -6,9 +6,15 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/13 10:57:07 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/28 14:33:50 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 15:43:32 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strcat appends a copy of the null-terminated string s2 to the end of the
+** null-terminated string s1, then add a terminating `\0'.  The string s1 must
+** have sufficient space to hold the result.
+*/
 
 #include "libft.h"
 

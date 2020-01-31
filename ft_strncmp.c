@@ -6,9 +6,16 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 15:16:39 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/02 11:32:52 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 16:12:42 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strncmp lexicographically compare the null-terminated strings s1 and s2
+** not more than n characters. The return value is an integer greater than, 
+** equal to, or less than 0, according as the string s1 is greater than, equal
+** to, or less than the string s2 based on ASCII value.
+*/
 
 #include "libft.h"
 

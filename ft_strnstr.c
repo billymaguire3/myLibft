@@ -6,9 +6,15 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/13 19:42:11 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/24 12:18:46 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 16:07:39 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strnstr locates the first occurrence of the null-terminated string
+** needle in the string haystack, where not more than len characters are
+** searched. Characters that appear after a `\0' character are not searched.
+*/
 
 #include "libft.h"
 

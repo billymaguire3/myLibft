@@ -6,9 +6,16 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 17:29:15 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 14:31:59 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 15:20:26 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_memcmp compares byte string s1 against byte string s2.  Both strings
+** are assumed to be n bytes long. The function returns zero if the two strings
+** are identical, otherwise returns the difference between the first two
+** differing bytes (treated as unsigned char values).
+*/
 
 #include "libft.h"
 

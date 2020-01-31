@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 13:30:18 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/12/04 19:54:46 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 15:23:40 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_memcpy copies n bytes from memory area src to memory area dst. If dst
+** and src overlap, behavior is undefined.
+*/
 
 #include "libft.h"
 

@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/24 17:09:40 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/01 14:03:34 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 15:37:13 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strcpy copies the string src to dst (including the terminating 
+** `\0' character.)
+*/
 
 #include "libft.h"
 

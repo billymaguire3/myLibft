@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/04 16:36:20 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/12/04 20:01:16 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 15:04:46 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_memmove copies len bytes from string src to string dst.  The two
+** strings may overlap; the copy is always done in a non-destructive manner.
+*/
 
 #include "libft.h"
 

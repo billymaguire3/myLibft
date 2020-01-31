@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/21 15:04:57 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/10/30 09:42:30 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 16:26:26 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+**  ft_tolower converts an upper-case letter to the corresponding
+** lower-case letter.
+*/
 
 #include "libft.h"
 

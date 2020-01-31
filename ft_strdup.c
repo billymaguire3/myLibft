@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 12:58:33 by wimaguir          #+#    #+#             */
-/*   Updated: 2019/08/09 14:32:39 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 15:35:38 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strdup allocates sufficient memory for a copy of the string s1, does
+** the copy, and returns a pointer to it.
+*/
 
 #include "libft.h"
 

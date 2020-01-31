@@ -6,9 +6,14 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 17:15:54 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 17:54:52 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/01/30 16:02:06 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** ft_strrchr is identical to ft_strchr, except it locates the last
+** occurrence of c.
+*/
 
 #include "libft.h"
 
