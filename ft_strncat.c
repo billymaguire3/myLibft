@@ -6,13 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/20 17:35:05 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/30 15:46:04 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/05 12:30:48 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** ft_strncat appends a copy of the null-terminated string s2 to the end of the
-** null-terminated string s1, then add a terminating `\0'.  The string 
+** null-terminated string s1, then add a terminating `\0'.  The string
 ** s1 must have sufficient space to hold the result.
 ** ft_strncat appends not more than n characters from s2, and then adds a
 ** terminating `\0'.

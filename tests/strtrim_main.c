@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   strtrim_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/29 17:36:09 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 12:30:19 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/05 12:25:29 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/05 12:26:15 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+int		main(void)
 {
-	char	*fresh;
-	int		i;
+	char *str = "\t\n   Hello World! \n ";
 
-	i = 0;
-	fresh = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1) + ft_strlen(s2));
-	if (s1 != NULL && s2 != NULL)
-	{
-		while (*s1 != '\0')
-			ft_strcpy(&fresh[i++], ((char *)s1++));
-		while (*s2 != '\0')
-			ft_strcpy(&fresh[i++], ((char *)s2++));
-		fresh[i] = '\0';
-		return (fresh);
-	}
-	else
-		return (NULL);
+	printf("str BEFORE trim = %s\n\n", str);
+	printf("str AFTER trim = %s\n\n", ft_strtrim(str));
+	return (0);
 }
