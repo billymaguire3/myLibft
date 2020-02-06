@@ -1,22 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strtrim_main.c                                     :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/05 12:25:29 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 16:54:34 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/05 17:32:13 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/05 17:34:48 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
-
-int		main(void)
+int		ft_isspace(int c)
 {
-	char *str = "\t\n   Hello World! \n\n\n\n ";
-
-	printf("str BEFORE trim = %s\n\n", str);
-	printf("str AFTER trim = %s\n", ft_strtrim(str));
-	return (0);
+	if (c == '\t' || c == '\n' || c == '\v' || c == '\f' ||
+			c == '\r' || c == ' ')
+		return (1);
+	else
+		return (0);
 }

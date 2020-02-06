@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 10:24:32 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 12:28:56 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/05 16:52:47 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,12 @@ int		last_position(char const *str)
 	return (i);
 }
 
+int		fresh_len(const char *str)
+{
+	return(last_position(str) - first_position(str));
+}
+
+
 char	*ft_strtrim(char const *s)
 {
 	char	*fresh;
@@ -53,10 +59,10 @@ char	*ft_strtrim(char const *s)
 	int		start;
 
 	i = 0;
-	len = ft_strlen(s) + 1;
-	fresh = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	len = fresh_len(s) + 1;
+	fresh = (char *)malloc(sizeof(char) * (len));
 	start = first_position(s);
-	if (s != NULL)
+	if (s)
 	{
 		while (i < len)
 			fresh[i++] = s[start++];

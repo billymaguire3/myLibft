@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 11:39:00 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 10:56:36 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/05 17:35:11 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
 int		ft_isprint(int c);
+int		ft_isspace(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
