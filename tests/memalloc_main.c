@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strtrim_main.c                                     :+:      :+:    :+:   */
+/*   memalloc_main.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/05 12:25:29 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/06 13:34:44 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/06 12:13:37 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/06 12:35:36 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 
 int		main(void)
 {
-	char *str = "\n\n\nbilly  ";
+	size_t mem_size = 8;
 
-	printf("str BEFORE trim = %s\n\n", str);
-	printf("str AFTER trim = %s\n", ft_strtrim(str));
+	printf("%p\n", ft_memalloc(mem_size));
 	return (0);
 }

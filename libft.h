@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 11:39:00 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 17:35:11 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/06 14:32:24 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,7 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
+char	**ft_strsplit(char const *s, char c);
 char	*ft_strnew(size_t size);
 char	*ft_strcpy(char *dest, char *src);
 char	*ft_strncpy(char *dest, char *src, unsigned int len);
