@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/06 14:32:35 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/06 15:22:29 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/11 19:02:43 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,19 @@
 ** returns NULL.
 */
 
+#include "libft.h"
+
 char	**ft_strsplit(char const *s, char c)
 {
+	char **fresh;
 
-#include "libft.h"
+
 
 int		main(void)
 {
 	char *str = "*hello*fellow***students*";
 
 	printf("String BEFORE ft_strsplit:\n%s\n\n", str);
-//	printf("String AFTER  ft_strsplit:\n%s\n", ft_strsplit(str, '*'));
+	printf("String AFTER  ft_strsplit:\n%s\n", ft_strsplit(str, '*'));
 	return (0);
 }
