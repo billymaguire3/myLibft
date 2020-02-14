@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 11:39:00 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/13 16:02:29 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/14 14:14:26 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int		ft_isspace(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_putchar(char c);
 void	ft_putstr(char const *s);
+void	ft_putendl(char const *s);
 void	ft_putnbr(int n);
 void	ft_memdel(void **ap);
 void	*ft_memalloc(size_t size);

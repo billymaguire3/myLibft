@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putnbr_main.c                                      :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/02 11:39:02 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/14 15:27:39 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/14 14:11:16 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/14 14:17:06 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+/*
+** Outputs the string s to the standard output
+*/
 
-int		main(void)
+#include "libft.h"
+
+void	ft_putendl(char const *s)
 {
-	int nbr = 2147483647;
-
-	ft_putnbr(nbr);
-	return (0);
+	ft_putstr(s);
+	ft_putchar('\n');
 }

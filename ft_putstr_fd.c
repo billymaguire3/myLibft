@@ -1,21 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   putnbr_main.c                                      :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/02 11:39:02 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/14 15:27:39 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/14 14:57:08 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/14 14:59:17 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
-int		main(void)
+void	ft_putstr(char const *s, int fd)
 {
-	int nbr = 2147483647;
+	int i;
 
-	ft_putnbr(nbr);
-	return (0);
+	i = 0;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
 }
