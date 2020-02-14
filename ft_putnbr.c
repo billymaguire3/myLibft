@@ -6,9 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/02 11:40:51 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/14 15:27:21 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/14 15:36:42 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+** Output the integer n to the standard output
+*/
 
 #include "libft.h"
 
