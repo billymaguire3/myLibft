@@ -1,21 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strsub_main.c                                      :+:      :+:    :+:   */
+/*   strsplit_main.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 18:01:08 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/11 14:56:06 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/13 15:52:50 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/13 15:53:21 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-#include <stdio.h> // printf
 
-int		main(int argc, char **argv)
+int		main(void)
 {
-	if (argc == 4)
-		printf("%s\n", ft_strsub(argv[1], ft_atoi(argv[2]), ft_atoi(argv[3])));
+	char *str =  "*hello*fellow***students*";
+	char **split_str;
+
+	split_str = ft_strsplit(str, '*');
+
+	if (split_str)
+	{
+		int i;
+		i = 0;
+		while (*(split_str + i))
+		{
+			printf("%s, ", *(split_str + i));
+			i++;
+		}
+		printf("\n");
+	}
 	return (0);
 }

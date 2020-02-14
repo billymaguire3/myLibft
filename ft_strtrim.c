@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 10:24:32 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 16:52:47 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/06 14:29:00 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,17 +20,12 @@
 
 #include "libft.h"
 
-int		white_space(char c)
-{
-	return (c == ' ' || c == '\t' || c == '\n');
-}
-
 int		first_position(char const *str)
 {
 	int i;
 
 	i = 0;
-	while (white_space(str[i]))
+	while (ft_isspace(str[i]))
 		++i;
 	return (i);
 }
@@ -40,16 +35,15 @@ int		last_position(char const *str)
 	int i;
 
 	i = ft_strlen(str) - 1;
-	while (white_space(str[i]))
+	while (ft_isspace(str[i]))
 		--i;
 	return (i);
 }
 
 int		fresh_len(const char *str)
 {
-	return(last_position(str) - first_position(str));
+	return (last_position(str) - first_position(str));
 }
-
 
 char	*ft_strtrim(char const *s)
 {
