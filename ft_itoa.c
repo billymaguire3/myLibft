@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 10:35:38 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/14 15:30:10 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/14 15:38:51 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int		int_len(long nbr)
 
 char	*ft_itoa(int n)
 {
-	long nbr;
-	int i;
-	char *fresh;
+	long	nbr;
+	int		i;
+	char	*fresh;
 
 	nbr = (long)n;
 	i = int_len(nbr);
