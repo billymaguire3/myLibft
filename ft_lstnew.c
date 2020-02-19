@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strequ.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 14:30:56 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/18 15:51:32 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/18 17:24:12 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/18 17:24:41 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Lexicographical comparison between s1 and s2. If the 2 strings are
-** identical the function returns 1, or 0 otherwise.
-*/
-
 #include "libft.h"
 
-int		ft_strequ(char const *s1, char const *s2)
+
+
+typedef struct		s_list
 {
-	if (s1 && s2)
-	{
-		if (!ft_strcmp(s1, s2))
-			return (1);
-	}
-	return (0);
-}
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;

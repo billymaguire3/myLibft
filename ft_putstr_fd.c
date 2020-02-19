@@ -6,13 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 14:57:08 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/14 14:59:17 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/18 14:43:57 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	int i;
 
@@ -21,4 +21,5 @@ void	ft_putstr(char const *s, int fd)
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;
+	}
 }
