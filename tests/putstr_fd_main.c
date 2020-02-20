@@ -1,38 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   putstr_fd_main.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/08/02 11:40:51 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/20 13:00:27 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/20 13:51:41 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/20 13:54:47 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** Output the integer n to the standard output
-*/
+#include "../libft.h"
 
-#include "libft.h"
-
-void	ft_putnbr(int n)
+int		main(void)
 {
-	long nbr;
+	char *str = "this string goes to fd's if 0-2";
 
-	nbr = (long)n;
-	if (nbr < 0)
-	{
-		ft_putchar('-');
-		nbr = (nbr * -1);
-	}
-	if (nbr > 9)
-	{
-		ft_putnbr(nbr / 10);
-		ft_putchar((nbr % 10) + '0');
-	}
-	else
-	{
-		ft_putchar(nbr + '0');
-	}
+	ft_putstr_fd(str, 2);
+	return (0);
 }
