@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 15:43:54 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/14 15:44:17 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/21 17:07:23 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 #include "libft.h"
 
-size_t		word_count(char const *s, char c)
+static size_t		word_count(char const *s, char c)
 {
 	int	i;
 	int	wc;
@@ -39,7 +39,7 @@ size_t		word_count(char const *s, char c)
 	return (wc);
 }
 
-size_t		word_length(char const *s, char c)
+static size_t		word_length(char const *s, char c)
 {
 	int	length;
 
@@ -52,7 +52,7 @@ size_t		word_length(char const *s, char c)
 	return (length);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char				**ft_strsplit(char const *s, char c)
 {
 	char	**fresh;
 	int		wl;

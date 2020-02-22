@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 10:35:38 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/18 15:47:43 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/21 17:03:57 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 
 #include "libft.h"
 
-int		int_len(long nbr)
+static int		int_len(long nbr)
 {
 	int len;
 
@@ -35,7 +35,7 @@ int		int_len(long nbr)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	long	nbr;
 	int		i;
