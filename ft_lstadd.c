@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/21 13:49:44 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/21 15:44:11 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/25 16:17:07 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	if (*alst && *new)
+	if (alst && new)
 	{
 		new->next = *alst;
 		*alst = new;

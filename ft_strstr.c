@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 19:16:39 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/30 16:05:40 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/24 18:04:24 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,30 @@
 
 #include "libft.h"
 
-char	*ft_strstr(char *haystack, char *needle)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
-	size_t len;
+	char	*large;
+	char	*small;
+	size_t	i;
+	size_t	j;
 
-	len = ft_strlen(needle);
-	while (*haystack)
+	large = (char *)haystack;
+	small = (char *)needle;
+	i = 0;
+	j = 0;
+	if (*small == 0)
+		return (large);
+	while (large[i])
 	{
-		if (!ft_memcmp((char *)haystack, (char *)needle, len))
-			return (haystack);
-		haystack++;
+		j = 0;
+		while (large[i] == small[j] && large[i])
+		{
+			i++;
+			j++;
+		}
+		if (small[j] == 0)
+			return (&large[i - j]);
+		i = (i - j) + 1;
 	}
-	return (0);
+	return (NULL);
 }

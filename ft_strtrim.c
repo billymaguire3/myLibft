@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 10:24:32 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/21 17:07:00 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/24 20:32:06 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,14 @@ char			*ft_strtrim(char const *s)
 	len = fresh_len(s) + 1;
 	fresh = (char *)malloc(sizeof(char) * (len));
 	start = first_position(s);
-	if (s)
+	if (!s)
+		return (NULL);
+	while (i < len)
 	{
-		while (i < len)
-			fresh[i++] = s[start++];
-		fresh[i] = '\0';
+		fresh[i] = s[start];
+		i++;
+		start++;
 	}
+	fresh[i] = '\0';
 	return (fresh);
 }

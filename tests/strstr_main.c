@@ -6,16 +6,17 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/08 20:00:31 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/15 11:02:46 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/24 18:06:11 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h>
 
 int		main(void)
 {
 	char largestring[20] = "maguire";
-	char smallstring[10] = "ui";
+	char smallstring[10] = "ag";
 
 	printf("CPU's strstr: %s\n\n", strstr(largestring, smallstring));
 	printf("My ft_strstr: %s\n\n", ft_strstr(largestring, smallstring));

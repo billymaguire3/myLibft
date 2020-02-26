@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/29 17:36:09 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/05 12:30:19 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/24 19:01:04 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	fresh = (char *)malloc(sizeof(char) * (ft_strlen(s1) + 1) + ft_strlen(s2));
+	if (!fresh)
+		return (NULL);
 	if (s1 != NULL && s2 != NULL)
 	{
 		while (*s1 != '\0')

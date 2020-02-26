@@ -6,18 +6,19 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/21 16:20:01 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/21 16:22:27 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/24 16:13:37 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h>
 
 int		main(void)
 {
 	char largestring[20] = "lets go redwings";
-	char smallstring[10] = "gs";
+	char smallstring[10] = "billy";
 
-	printf("CPU's strnstr: %s\n\n", strnstr(largestring, smallstring, 16));
-	printf("My ft_strnstr: %s\n\n", ft_strnstr(largestring, smallstring, 16));
+	printf("CPU's strnstr: %s\n\n", strnstr(largestring, smallstring, 7));
+	printf("My ft_strnstr: %s\n\n", ft_strnstr(largestring, smallstring, 7));
 	return (0);
 }
