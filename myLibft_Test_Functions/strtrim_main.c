@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strchr_main.c                                      :+:      :+:    :+:   */
+/*   strtrim_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 17:00:02 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/10 18:25:30 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/05 12:25:29 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 17:20:22 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h>
 
 int		main(void)
 {
-	char str[10] = "billy";
+	char *str = "		billy\n\n\n";
 
-	printf("the output for CPU's strchr is: ""%s\n", strchr(str, 'l'));
-	printf("the output for MY ft_strchr is: ""%s\n", ft_strchr(str, 'l'));
+	printf("str BEFORE trim = %s\n\n", str);
+	printf("str AFTER trim = %s\n", ft_strtrim(str));
 	return (0);
 }

@@ -6,13 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 17:00:40 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/11 14:55:14 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/26 17:04:17 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
 ** Allocates (with malloc) and returns a “fresh” substring from the string
-** given as argument. The substring begins at indexstart and is of size len.
+** given as argument. The substring begins at index "start([0])" and is of size "len".
 ** If start and len aren’t refering to a valid substring, the behavior is
 ** undefined. If the allocation fails, the function returns NULL.
 */

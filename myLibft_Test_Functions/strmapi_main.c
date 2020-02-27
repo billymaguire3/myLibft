@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strjoin_main.c                                     :+:      :+:    :+:   */
+/*   strmapi_main.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/30 13:52:43 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/24 19:01:07 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 14:09:49 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 16:53:11 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h> //printf
 
-#include <stdio.h>
+char	ascii_plus_five(unsigned int i, char s)
+{
+	(void)i;
+	s += 5;
+	return (s);
+}
 
 int		main(void)
 {
-	char *prefix = "Look it ";
-	char *suffix = "Works!!!!!!!!";
-
-	printf("s1 before ft_strjoin: %s\n", prefix);
-	printf("s2 before ft_strjoin: %s\n", suffix);
-	printf("s1 & s2 after FT_STRJOIN: %s\n", ft_strjoin(prefix, suffix));
+	char *str = "billy";
+	char *fresh = ft_strmapi(str, ascii_plus_five);
+	printf("%s\n", fresh);
 	return (0);
 }

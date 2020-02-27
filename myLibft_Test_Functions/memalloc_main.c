@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strnstr_main.c                                     :+:      :+:    :+:   */
+/*   memalloc_main.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/21 16:20:01 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/24 16:13:37 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/06 12:13:37 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 16:06:18 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,8 @@
 
 int		main(void)
 {
-	char largestring[20] = "lets go redwings";
-	char smallstring[10] = "billy";
+	size_t mem_size = 8;
 
-	printf("CPU's strnstr: %s\n\n", strnstr(largestring, smallstring, 7));
-	printf("My ft_strnstr: %s\n\n", ft_strnstr(largestring, smallstring, 7));
+	printf("%p\n", ft_memalloc(mem_size));
 	return (0);
 }

@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strsplit_main.c                                    :+:      :+:    :+:   */
+/*   strstr_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/13 15:52:50 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/13 15:53:21 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/08 20:00:31 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 15:32:15 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h>
 
 int		main(void)
 {
-	char *str =  "*hello*fellow***students*";
-	char **split_str;
+	char largestring[20] = "maguire";
+	char smallstring[10] = "ag";
 
-	split_str = ft_strsplit(str, '*');
-
-	if (split_str)
-	{
-		int i;
-		i = 0;
-		while (*(split_str + i))
-		{
-			printf("%s, ", *(split_str + i));
-			i++;
-		}
-		printf("\n");
-	}
+	printf("CPU's strstr: %s\n\n", strstr(largestring, smallstring));
+	printf("My ft_strstr: %s\n\n", ft_strstr(largestring, smallstring));
 	return (0);
 }

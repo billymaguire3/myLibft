@@ -6,13 +6,13 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 15:43:54 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/21 17:07:23 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/26 18:18:12 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-** Allocates (with malloc) and returns an fresh of “fresh” ss
-** (all ending with '\0', including the fresh itself) obtained by spliting
+** Allocates (with malloc(3)) and returns an array of “fresh” strings
+** (all ending with ’\0’, including the array itself) obtained by spliting s
 ** using the character c as a delimiter. If the allocation fails the function
 ** returns NULL.
 */

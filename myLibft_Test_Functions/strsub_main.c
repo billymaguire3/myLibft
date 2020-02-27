@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strrchr_main.c                                     :+:      :+:    :+:   */
+/*   strsub_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/28 17:15:31 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/01/08 17:44:43 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/01/28 18:01:08 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 17:01:32 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
+#include <stdio.h> // printf
 
-int		main(void)
+int		main(int argc, char **argv)
 {
-	char str[20] = "cheddarcheese";
-
-	printf("the output for CPU's strrchr is: ""%s\n", strrchr(str, 'h'));
-	printf("the output for MY ft_strchr is: ""%s\n", ft_strrchr(str, 'h'));
+	if (argc == 4)
+		printf("%s\n", ft_strsub(argv[1], ft_atoi(argv[2]), ft_atoi(argv[3])));
 	return (0);
 }

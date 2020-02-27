@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strtrim_main.c                                     :+:      :+:    :+:   */
+/*   strsplit_main.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/02/05 12:25:29 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/24 20:15:40 by wimaguir         ###   ########.fr       */
+/*   Created: 2020/02/13 15:52:50 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 18:26:07 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,21 @@
 
 int		main(void)
 {
-	char *str = "        ";
+	char *str =  "*hello*fellow***students*";
+	char **split_str;
 
-	printf("str BEFORE trim = %s\n\n", str);
-	printf("str AFTER trim = %s\n", ft_strtrim(str));
+	split_str = ft_strsplit(str, '*');
+
+	if (split_str)
+	{
+		int i;
+		i = 0;
+		while (*(split_str + i))
+		{
+			printf("%s, ", *(split_str + i));
+			i++;
+		}
+		printf("\n");
+	}
 	return (0);
 }

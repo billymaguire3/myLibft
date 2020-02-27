@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/10 12:58:38 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/24 16:25:46 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/26 15:05:39 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 ** dstsize is 0 or the original dst string was longer than dstsize
 ** (in practice this should not happen as it means that either dstsize is
 ** incorrect or that dst is not a proper string). If the src and dst strings
-** overlap, the behavior is undefined. Returns the total length of src + dst.
+** overlap, the behavior is undefined. Returns the total length of src + dst
+** (the string they tried to create).
 */
 
 #include "libft.h"

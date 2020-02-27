@@ -1,29 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strmap_main.c                                      :+:      :+:    :+:   */
+/*   strcpy_main.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/01/28 13:06:12 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/20 14:12:59 by wimaguir         ###   ########.fr       */
+/*   Created: 2019/07/25 13:28:06 by wimaguir          #+#    #+#             */
+/*   Updated: 2020/02/26 14:28:00 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
-
-#include <stdio.h> //printf
-
-char	func(char s)
-{
-	s += 5;
-	return (s);
-}
+#include <stdio.h>
 
 int		main(void)
 {
-	char *str = "abc";
-	char *fresh = ft_strmap(str, func);
-	printf("%s\n", fresh);
+	char dest[] = "billyyyyyyyyyyyyyyy";
+	char src[] = "redwings";
+
+	ft_strcpy(dest, src);
+	printf("%s\n", dest);
 	return (0);
 }
