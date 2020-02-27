@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/25 15:48:50 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/24 16:10:34 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/26 21:25:11 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@ char	*ft_strncpy(char *dest, char *src, unsigned int len)
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = '\0';
+	while (i < len)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
