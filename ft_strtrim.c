@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/05 10:24:32 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/26 17:20:25 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/03/02 15:01:06 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,50 +20,30 @@
 
 #include "libft.h"
 
-static int		first_position(char const *str)
+char	*ft_strtrim(char const *s)
 {
-	int i;
+	char			*fresh;
+	unsigned int	i;
+	int				begin;
 
-	i = 0;
-	while (ft_isspace(str[i]))
-		++i;
-	return (i);
-}
-
-static int		last_position(char const *str)
-{
-	int i;
-
-	i = ft_strlen(str) - 1;
-	while (ft_isspace(str[i]))
-		--i;
-	return (i);
-}
-
-static int		fresh_len(const char *str)
-{
-	return (last_position(str) - first_position(str));
-}
-
-char			*ft_strtrim(char const *s)
-{
-	char	*fresh;
-	int		i;
-	int		len;
-	int		start;
-
-	i = 0;
-	len = fresh_len(s) + 1;
-	fresh = (char *)malloc(sizeof(char) * (len));
-	start = first_position(s);
 	if (!s)
 		return (NULL);
-	while (i < len)
-	{
-		fresh[i] = s[start];
+	i = 0;
+	while (ft_isspace(s[i]))
 		i++;
-		start++;
+	begin = i;
+	if (s[begin] == '\0')
+	{
+		fresh = ft_strnew(0);
+		fresh[0] = '\0';
+		return (fresh);
 	}
-	fresh[i] = '\0';
+	while (s[i] != '\0')
+		i++;
+	i--;
+	while (ft_isspace(s[i]))
+		i--;
+	if (!(fresh = (ft_strsub(s, begin, i - begin + 1))))
+		return (NULL);
 	return (fresh);
 }

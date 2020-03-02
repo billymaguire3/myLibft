@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 16:03:16 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/26 21:34:40 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/02/27 11:54:55 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,16 +20,14 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	char	*fresh;
-	unsigned int		i;
+	char			*fresh;
+	unsigned int	i;
 
-	if (!s || !f)
-		return (NULL);
-	if (!(fresh = ft_memalloc((size_t)(ft_strlen((char *)s) + 1))))
-		return (NULL);
 	i = 0;
-	if (fresh)
+	if (s && f)
 	{
+		if (!(fresh = (char *)malloc(ft_strlen(s) + 1)))
+			return (NULL);
 		while (s[i])
 		{
 			fresh[i] = (f)(s[i]);

@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/14 15:43:54 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/02/26 18:18:12 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/03/02 14:56:23 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,11 +59,12 @@ char				**ft_strsplit(char const *s, char c)
 	int		size;
 	int		i;
 
-	size = word_count(s, c);
 	i = 0;
 	if (!s)
 		return (0);
-	fresh = (char **)malloc(sizeof(char *) * (size + 1));
+	size = word_count(s, c);
+	if (!(fresh = (char **)malloc(sizeof(char *) * (size + 1))))
+		return (NULL);
 	while (i < size)
 	{
 		while (*s == c && *s != '\0')
