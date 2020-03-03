@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 14:41:33 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/03/02 15:35:10 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/03/02 16:21:10 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
-	int i;
-	unsigned char *str1;
-	unsigned char *str2;
+	int				i;
+	unsigned char	*str1;
+	unsigned char	*str2;
 
 	i = 0;
 	str1 = (unsigned char *)s1;

@@ -6,7 +6,7 @@
 /*   By: wimaguir <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 12:32:46 by wimaguir          #+#    #+#             */
-/*   Updated: 2020/03/02 15:55:14 by wimaguir         ###   ########.fr       */
+/*   Updated: 2020/03/02 16:28:22 by wimaguir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@
 char	*ft_strnew(size_t size)
 {
 	size_t	i;
-	char	*str;
+	char	*fresh;
 
 	i = 0;
-	if (!(str = (char *)malloc(sizeof(size + 1))))
+	if (!(fresh = ft_memalloc(size + 1)))
 		return (NULL);
 	while (i < size)
 	{
-		str[i] = '\0';
+		fresh[i] = '\0';
 		i++;
 	}
-	return (str);
+	return (fresh);
 }
